@@ -1,22 +1,18 @@
 sudo: required
 before_install:
-  - sudo apt-get install build-essential
-# Enable C++ support
+- sudo apt-get install build-essential
 language: cpp
-# Compiler selection
 compiler:
-  - gcc
-#install: 
-#    - make get-deps
+- gcc
 script:
-    - cd src 
-    - make
-    - ./helloworld
+- cd src
+- make
+- "./helloworld"
 deploy:
   provider: releases
-  api_key: 
-    secure: "betlwaT/PAaq8itHLz/HFjilueREEg4DRzrXHFAWbdgYF2Gxollz+MGcfREx17PrR8fOG7HELYhOq1n4QbL1ywLDLYleaYa4rm6iREy/1+e2V0FvwYK6aKNztqCNueCHmn6X2RMDJ+Y4nL0cxISgHFmlDhwNGqEFQ3Vc0S+ko3Nw9LIJB3wn/O2nKhKqHYLbJSDRA+r1oqVW7tvnu/Z7l5LZrjXCuly1YUMVpOKu3aUR2e+D0ZY4UdlqDx8oMaCqHJjblmrqhvu7QzjO5KT6Skl6Q6V013461KvBOlDYdx7zB5cabVO2XiQYpYjwqDis8mOFC+c+G9YaS5hMBrrMAZSNiWDKvHuKhNG+jHAuQdfhhvqKIP+crpLV2i0PkDrAw0J8NbFS2zeFBr2JDOu5NI6P79buvu/zoxEoV8BNkAZ8n0719l4qVnV5KMgneRKcNcJdXx6aufDxfjatknHfgjdWsEG2T4x4MqjolZHqr6nitz6Xme6t1QR/itn9NJMLkstXJ+FSqKlllGiKhAI0EcAEHlGzG0pOqVuLIF/bPSikrqUpKiYNEGbfuQCdaTiTzLWL38m4Lyb6bcrM/rTMsS6KIzDghnMKSpRqEsUb7OCgY78cT7vaiK4CpP/CdXQh6QzbSzTEh49XuFWOMI7fyQxKjTskElU4F+KQgvBSux0="
-  file: "helloworld"
+  api_key:
+    secure: b1QTGdFh3/wK84wGAhRbs9IqtioII7C1FHz0yBUesQIqKfrxCqt2BpsZSqmUxgDqIReIIBt1aGGl7ifzE6TWC5nKzOnfDgfPJwLKrJmsTzDNO+FB2LuDWF4WNFoTMKPZTdzkxPzXJZfXYzc6THibJ6JjfhCttwDkrjyTEY2dz+7s4IYdOkerboHXKxAykAEz+Uy4VA4yN7Np/d7Xu1t7ql5cVnGyP7eIK31MDQd6FxqXHp3JKYzx5laMRjEqpMbCNlU/USFCkbb5XrdrASxCzX5mOInnydkeHnEtNaYRzNZFKW1eW6aQpY6fq/ALHW8d3nn8Ag2ikMThbNM0+soyrmafx+aXI5FJmM+nGPQAKwyf3nkqHOzb4ZP64qlK83DV/K8YjH+vPofsYf9f27sPzTceWHYC42+ZP9RG+JYYJh86/GGbziPdseQo8lizL7vT7CtVFbMQLWxyOjYyYjeWmAmArJXjgQEFFtbH9KY49vfSWtFeETfnAhT6yKtdxHjH7PICZUcigLMvheqKONb9XCUQTHU0HU8WNSHfnnKAkiVD5irvZQqheuJlMivlKA9QJeGmyBUd/cLYiga4uvOKDLptg4UPYrJsqgK8nTGuDbNrguec6NYVuhCqy3eI2mZgng1xb5OEXqIWmDfnQjnI1R4k1rgm15P8EDE23oaEJuU=
+  file: "src/helloworld"
   skip_cleanup: true
   overwrite: true
   on:
