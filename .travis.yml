@@ -12,3 +12,12 @@ script:
     - cd src 
     - make
     - ./helloworld
+deploy:
+  provider: releases
+  api_key: 
+    secure: "b3ddf0a0595da290022b548cd2d7323914977e61"
+  file: "helloworld"
+  skip_cleanup: true
+  overwrite: true
+  on:
+    tags: true
