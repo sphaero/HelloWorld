@@ -15,7 +15,7 @@ script:
 deploy:
   provider: releases
   api_key: 
-    secure: "0980b7824e432f72a40b50a085ce26e63d94404f"
+    secure: "betlwaT/PAaq8itHLz/HFjilueREEg4DRzrXHFAWbdgYF2Gxollz+MGcfREx17PrR8fOG7HELYhOq1n4QbL1ywLDLYleaYa4rm6iREy/1+e2V0FvwYK6aKNztqCNueCHmn6X2RMDJ+Y4nL0cxISgHFmlDhwNGqEFQ3Vc0S+ko3Nw9LIJB3wn/O2nKhKqHYLbJSDRA+r1oqVW7tvnu/Z7l5LZrjXCuly1YUMVpOKu3aUR2e+D0ZY4UdlqDx8oMaCqHJjblmrqhvu7QzjO5KT6Skl6Q6V013461KvBOlDYdx7zB5cabVO2XiQYpYjwqDis8mOFC+c+G9YaS5hMBrrMAZSNiWDKvHuKhNG+jHAuQdfhhvqKIP+crpLV2i0PkDrAw0J8NbFS2zeFBr2JDOu5NI6P79buvu/zoxEoV8BNkAZ8n0719l4qVnV5KMgneRKcNcJdXx6aufDxfjatknHfgjdWsEG2T4x4MqjolZHqr6nitz6Xme6t1QR/itn9NJMLkstXJ+FSqKlllGiKhAI0EcAEHlGzG0pOqVuLIF/bPSikrqUpKiYNEGbfuQCdaTiTzLWL38m4Lyb6bcrM/rTMsS6KIzDghnMKSpRqEsUb7OCgY78cT7vaiK4CpP/CdXQh6QzbSzTEh49XuFWOMI7fyQxKjTskElU4F+KQgvBSux0="
   file: "helloworld"
   skip_cleanup: true
   overwrite: true
