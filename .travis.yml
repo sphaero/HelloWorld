@@ -1,0 +1,14 @@
+sudo: required
+before_install:
+  - sudo apt-get install build-essential
+# Enable C++ support
+language: cpp
+# Compiler selection
+compiler:
+  - gcc
+#install: 
+#    - make get-deps
+script:
+    - cd src 
+    - make
+    - ./helloworld
