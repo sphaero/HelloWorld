@@ -11,8 +11,7 @@ script:
  - cd src
  - make
 after_success:
- - mv helloworld helloworld_${TRAVIS_OS_NAME}
- - ./helloworld_${TRAVIS_OS_NAME}
+ - env; echo $HOME; mv helloworld helloworld_${TRAVIS_OS_NAME}; ./helloworld_${TRAVIS_OS_NAME}
 deploy:
   provider: releases
   api_key:
